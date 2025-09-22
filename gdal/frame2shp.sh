@@ -1,10 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-PGHOST=localhost
-PGPORT=5432
-PGUSER=postgres
-PGDATABASE=postgres
-PGSCHEMA=public
+SCRIPTPATH="$(dirname "$0")"
+source "$SCRIPTPATH"/.env
+
 PGTABLES=tablename
 
 OUTPUT=$HOME/Downloads/filename
